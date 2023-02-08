@@ -1,22 +1,14 @@
 {
-  "name": "railsware",
+  "name": "artsel",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "watch": "gulp watch",
-    "build": "gulp styles fonts scripts libs images"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/1pandafly/railsware.git"
+    "build": "gulp build"
   },
   "author": "Andrii Maslov",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/1pandafly/railsware/issues"
-  },
-  "homepage": "https://github.com/1pandafly/railsware#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.20.2",
     "browser-sync": "^2.27.11",

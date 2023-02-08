@@ -1,0 +1,125 @@
+.hero-section {
+  padding: 80px;
+  background: $bg-color-slider;
+
+  @media (max-width: 1024px) {
+    padding: 40px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 40px 15px;
+  }
+
+  .triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+
+  .swiper-slide {
+    &:nth-child(4n + 1) {
+      @include triangles($card-color-1, $card-color-2);
+    }
+
+    &:nth-child(4n + 2) {
+      @include triangles($card-color-3, $card-color-4);
+    }
+
+    &:nth-child(4n + 3) {
+      @include triangles($card-color-5, $card-color-6);
+    }
+
+    &:nth-child(4n + 4) {
+      @include triangles($card-color-7, $card-color-8);
+    }
+  }
+
+  .slide-social-wrapper {
+    display: flex;
+    gap: 21px;
+    width: fit-content;
+    margin-bottom: 16px;
+    background: #dbd978;
+    padding: 8px 16px;
+    border-radius: 30px;
+  }
+
+  .slide-social-link {
+    svg {
+      display: block;
+    }
+  }
+
+  .slide-image-wrapper {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 15px;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+
+    .triangle1 {
+      left: 0;
+      top: calc(50% - 15px);
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+    }
+
+    .triangle2 {
+      top: 0;
+      right: calc(50% - 15px);
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+    }
+
+    .triangle3 {
+      right: 0;
+      top: calc(50% - 15px);
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+    }
+
+    .triangle4 {
+      left: 0;
+      top: 50%;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+    }
+
+    .triangle5 {
+      right: 0;
+      top: 50%;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+    }
+
+    .triangle6 {
+      bottom: 0;
+      right: calc(50% - 15px);
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+    }
+  }
+
+  .slide-info {
+    text-align: center;
+    color: $text-color-main;
+
+    p:first-child {
+      margin-bottom: 8px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 115%;
+    }
+
+    p:last-child {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 115%;
+    }
+  }
+}

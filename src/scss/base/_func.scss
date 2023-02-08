@@ -1,0 +1,29 @@
+@mixin triangles($color1, $color2) {
+  .slide-image-wrapper {
+    background: linear-gradient(180deg, $color1 0%, $color1 50%, $color2 50%, $color2 100%);
+  }
+
+  .triangle1 {
+    border-bottom: 15px solid $color1;
+  }
+
+  .triangle2 {
+    border-top: 30px solid $color1;
+  }
+
+  .triangle3 {
+    border-bottom: 15px solid $color1;
+  }
+
+  .triangle4 {
+    border-top: 15px solid $color2;
+  }
+
+  .triangle5 {
+    border-top: 15px solid $color2;
+  }
+
+  .triangle6 {
+    border-bottom: 30px solid $color2;
+  }
+}

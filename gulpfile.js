@@ -71,7 +71,7 @@ gulp.task("watch", function () {
   gulp.watch("src/fonts/*.*").on("change", browserSync.reload);
 });
 
-gulp.task("delete", function(cb) {
+gulp.task("delete", async function(cb) {
     rimraf("dist", cb);
 });
 
